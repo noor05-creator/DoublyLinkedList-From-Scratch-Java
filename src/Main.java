@@ -140,7 +140,8 @@ void deleteAtIndex(int location){
        Node temp = head;
        for( i = 0;i<location;i++)
        {
-           temp = temp.next;  //left
+           temp = temp.next;
+           //check is placed here to ensure there is no null pointer exception
            if(temp == null)
            {
                System.out.println("invalid location");
